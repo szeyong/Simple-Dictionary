@@ -1,7 +1,7 @@
 import React from "react";
 import { AiFillSound } from "react-icons/ai";
 
-function WordPronounce(props) {
+const WordPronounce = (props) => {
     function playAudio(e) {
         e.preventDefault();
 

@@ -1,10 +1,11 @@
-import React from 'react'
+import React from 'react';
+import styles from "./Results.module.css";
 
 const WordExamples = (props) => {
     if (props.examples) {
         return (
-            <div className="WordExamples">
-                <div className="example">
+            <div className={styles.wordexamples}>
+                <div className={styles.example}>
                     "{props.examples}"
                 </div>
             </div>

@@ -1,30 +1,27 @@
 import React, { useState } from 'react';
 import axios from "axios";
-import { FaSearch } from "react-icons/fa";
+import WordSearch from "./WordSearch";
 import Results from "./Results";
 import styles from "./Parent.module.css";
 
 const Parent = () => {
-    const [word, setWord] = useState("");
     const [results, setResults] = useState(null);
+    const [error, setError] = useState(null);
 
-    function searchWord() {
+    function handleWordSearch(word) {
         let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${word}`;
-        axios.get(apiUrl).then(handleResponse);
-    }
-
-    function handleSubmit(e) {
-        e.preventDefault();
-        searchWord();
-    }
-
-    function handleWordChange(e) {
-        setWord(e.target.value);
+        axios.get(apiUrl).then(handleResponse).catch(handleError);
     }
 
     function handleResponse(response) {
         setResults(response.data[0]);
-      }
+        console.log("response:"+response);
+    }
+
+    function handleError(error) {
+        setError(error)
+        console.log("error:"+error);
+    }
 
     return (
         <div className={styles.dictionary}>
@@ -33,24 +30,11 @@ const Parent = () => {
                     <h1>Dictionary</h1>
                 </div>
                 <div className={styles.search}>
-                    <span className={styles.searchForm}>
-                        <form onSubmit={handleSubmit}>
-                            <button type="submit" className={styles.searchIcon}>
-                                <FaSearch />
-                            </button>
-                            <input
-                                type="search"
-                                className={styles.searchBar}
-                                placeholder="Enter a word"
-                                autocomplete="off"
-                                onChange={handleWordChange}
-                            ></input>
-                        </form>
-                    </span>
+                    <WordSearch onSearch={handleWordSearch}/>
                 </div>
             </div>
             <div className={styles.resultsBody}>
-                <Results results={results}/>
+                <Results results={results} error={error}/>
             </div>          
         </div>
     )

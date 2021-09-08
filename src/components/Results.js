@@ -1,12 +1,13 @@
 import React from "react";
 import Meanings from "./Meanings";
 import WordPronounce from "./WordPronounce";
+import styles from "./Results.module.css";
 
 function Results(props) {
   if (props.results) {
     return (
-      <div className="Results">
-        <div className="word">
+      <div className={styles.resultsContainer}>
+        <div className={styles.word}>
           <h2>{props.results.word}</h2>
 
           {props.results.phonetics.map(function (phonetic, idx) {
@@ -26,6 +27,10 @@ function Results(props) {
           );
         })}
       </div>
+    );
+  } else if (props.error) {
+    return (
+      <h3 className={styles.errormsg}>"No such word. Please try another one."</h3>
     );
   } else {
     return null;
