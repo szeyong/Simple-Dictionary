@@ -30,7 +30,6 @@ function Meanings(props) {
               <div className="description">{definitions.definition}</div>
               <WordExamples examples={definitions.example} />
               <WordSynonyms synonyms={definitions.synonyms} />
-              <div>hi</div>
             </div>
           );
         })}
