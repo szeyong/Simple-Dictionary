@@ -1,0 +1,66 @@
+.headerBackground {
+    background-color: #0000CD;
+    padding-bottom: 40px;
+  }
+  
+  .dictionary .headerBackground {
+    margin: 0 auto;
+
+  }
+
+  /* .appHeader {
+    font-size: 25px;
+    padding: 0 0 10px;
+    text-align: center;
+  } */
+
+  .dictionary h1 {
+    font-family: monospace;
+    font-size: 75px;
+    color: whitesmoke;
+    text-align: center;
+  }
+  
+  .search {
+    padding-top: 20px;
+    text-align: center;
+  }
+  
+  .searchForm {
+    display: inline;
+    box-shadow: 0 2px 8px rgb(137 176 174 / 10%),
+      4px 12px 24px rgb(85 91 110 / 10%);
+    padding: 20px 20px 15px 20px;
+    background: #fff;
+    border-radius: 30px;
+  }
+  
+  .dictionary .searchBtn {
+    border: none;
+    background-color: transparent;
+  }
+  .searchBar {
+    border: 0px;
+    outline: none;
+    font-size: 25px;
+    color: #61686d;
+    width: 50%;
+  }
+  
+  .dictionary form {
+    display: inline;
+  }
+  
+  .searchIcon {
+    font-size: 30px;
+    padding: 0 15px 0 0;
+    background-color: transparent;
+    border: transparent;
+  }
+  
+  .resultsBody {
+    margin: 0 auto;
+    max-width: 800px;
+  }
+  
+
