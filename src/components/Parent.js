@@ -33,7 +33,7 @@ const Parent = () => {
     const refreshWindow = () => {
         window.location.reload();
     }
-    
+
     function handleWordSearch(word) {
         setResults(null);
         // setWotd(null);
@@ -53,7 +53,7 @@ const Parent = () => {
         // console.log("error status:"+error.response.status);
         // console.log("error header:"+error.response.headers);
     }
-
+    // hello
 
     return (
         <div className={styles.dictionary}>
