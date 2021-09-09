@@ -1,5 +1,6 @@
 import React from "react";
 import { AiFillSound } from "react-icons/ai";
+import styles from "./Results.module.css"
 
 const WordPronounce = (props) => {
     function playAudio(e) {
@@ -9,9 +10,9 @@ const WordPronounce = (props) => {
         audio.play();
     }
     return (
-        <div className="phonetics">
-            <span className="phoneticsText">{props.phonetics.text}</span>
-            <span className="playAudio" onClick={playAudio}><AiFillSound /></span>
+        <div className={styles.Phonetics}>
+            <span className={styles.phoneticsText}>{props.phonetics.text}</span>
+            <span className={styles.playAudio} onClick={playAudio}><AiFillSound /></span>
         </div>
     );
 }

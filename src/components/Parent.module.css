@@ -3,56 +3,62 @@
     padding-bottom: 40px;
   }
   
-  .dictionary .headerBackground {
+.dictionary .headerBackground {
     margin: 0 auto;
+}
 
-  }
-
-  .dictionary h1 {
+.dictionary h1 {
     font-family: monospace;
     font-size: 50px;
     color: whitesmoke;
     text-align: center;
-  }
+    padding-top: 50px;
+}
+
+.appHeader:hover {
+  cursor: pointer;
+}
   
-  .search {
+.search {
     padding-top: 20px;
     text-align: center;
-  }
+}
   
-  .searchForm {
+.searchForm {
     display: inline;
     padding: 20px 15px 15px 20px;
     background: #fff;
     border-radius: 30px;
-  }
+}
   
-  .dictionary .searchBtn {
+.dictionary .searchBtn {
     border: none;
     background-color: transparent;
-  }
-  .searchBar {
+}
+
+.searchBar {
     border: 0px;
     outline: none;
     font-size: 25px;
     color: #61686d;
     width: 50%;
-  }
+}
   
-  .dictionary form {
+.dictionary form {
     display: inline;
-  }
+}
   
-  .searchIcon {
+.searchIcon {
     font-size: 30px;
     padding: 0 15px 0 0;
     background-color: transparent;
     border: transparent;
-  }
+}
   
-  .resultsBody {
+.resultsSection {
     margin: 0 auto;
     max-width: 800px;
-  }
+}
+  
   
 

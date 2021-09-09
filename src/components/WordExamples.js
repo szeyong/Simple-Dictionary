@@ -4,7 +4,7 @@ import styles from "./Results.module.css";
 const WordExamples = (props) => {
     if (props.examples) {
         return (
-            <div className={styles.wordexamples}>
+            <div className={styles.wordExamples}>
                 <div className={styles.example}>
                     "{props.examples}"
                 </div>

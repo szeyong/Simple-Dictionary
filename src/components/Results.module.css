@@ -1,3 +1,8 @@
+.resultsSection {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
 .resultsContainer {
     margin-top: 40px;
 }
@@ -11,6 +16,48 @@
     margin-bottom: 40px;
 }
 
+.resultsContainer section {
+    background: #ffffff;
+    padding: 30px;
+    margin: 20px 0;
+    border-radius: 20px;
+    box-shadow: 4px 4px 14px rgb(85 91 110 / 10%);
+}
+
+.phoneticText {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.playAudio {
+    color: #6495ED;
+    padding-left: 5px;
+}
+
+.playAudio:hover {
+    color: #0000CD;
+    padding-left: 5px;
+    cursor: pointer;
+}
+
+.meaning {
+    margin: 22px 0 0 0;
+}
+  
+.Definitions h3 {
+    font-size: 25px;
+    font-weight: 500;
+    color: #0000CD;
+    margin: 0;
+    text-align: left;
+}
+
+.description {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: left;
+}
+
 .example {
     font-size: 16px;
     font-style: italic;
@@ -18,22 +65,24 @@
     font-weight: 300;
     line-height: 30px;
     margin: 0 0 8px 0;
+    text-align: left;
 }
 
-.wordsyn ul {
+.Synonyms ul {
     padding: 0;
     margin: 0;
+    text-align: left;
 }
   
-.wordsyn .wordsynheader {
-    color: #0000CD;
-    font-weight: 400;
+.Synonyms .synheader {
+    color: #6495ED;
+    font-weight: 600;
 }
 
-.wordsyn li {
+.Synonyms li {
     color: #6495ED;
     font-size: 14px;
-    font-weight:300;
+    font-weight:200;
     display: inline-block;
     padding-right: 15px;
 }
@@ -41,4 +90,50 @@
 .errormsg {
     margin-top: 40px;
     font-size: 30px;
+}
+
+.wotdContainer {
+    background: #ffffff;
+    padding: 30px;
+    margin: 20px 0;
+    border-radius: 20px;
+    box-shadow: 4px 4px 14px rgb(85 91 110 / 10%);
+}
+
+.wotdTitle {
+    font-size: 30px;
+    font-weight: 500;
+    color: #0000CD;
+    margin: 0;
+    text-align: left;
+}
+
+.theWord {
+    font-size: 50px;
+    margin: 0;
+    text-align: left;
+}
+
+.wotdPOS {
+    font-size: 20px;
+    font-weight: 300;
+    color: #0000CD;
+    margin: 0;
+    text-align: left;
+}
+
+.wotdDef {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: left;
+}
+
+.wotdExample {
+    font-size: 16px;
+    font-style: italic;
+    opacity: 0.7;
+    font-weight: 300;
+    line-height: 30px;
+    margin: 10px 0 8px 0;
+    text-align: left;
 }

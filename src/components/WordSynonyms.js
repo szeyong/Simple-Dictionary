@@ -3,11 +3,11 @@ import styles from "./Results.module.css";
 
 const WordSynonyms = (props) => {
 
-    if (props.synonyms[0] !== "") {
+    if (props.synonyms) {
         return (
-            <div className={styles.wordsyn}>
+            <div className={styles.Synonyms}>
                 <ul>
-                    <li className={styles.wordsynheader}>Synonyms:</li>
+                    <li className={styles.synheader}>Synonyms:</li>
                     {props.synonyms.map(function (synonym, idx) {
                         return <li key={idx}> {synonym} </li>
                     })}

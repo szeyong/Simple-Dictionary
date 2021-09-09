@@ -1,6 +1,7 @@
 import React from "react";
 import Meanings from "./Meanings";
 import WordPronounce from "./WordPronounce";
+import WordOfTheDay from "./WordOfTheDay";
 import styles from "./Results.module.css";
 
 function Results(props) {
@@ -29,11 +30,16 @@ function Results(props) {
       </div>
     );
   } else if (props.error) {
+      
     return (
-      <h3 className={styles.errormsg}>"No such word. Please try another one."</h3>
+      <h3 className={styles.errormsg}>Please enter a valid english word.</h3>
     );
-  } else {
-    return null;
+  } else  {
+    return (
+      <div>
+        <WordOfTheDay />
+      </div>
+    );
   }
 }
 export default Results
