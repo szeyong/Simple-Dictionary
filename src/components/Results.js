@@ -30,7 +30,6 @@ function Results(props) {
       </div>
     );
   } else if (props.error) {
-      
     return (
       <h3 className={styles.errormsg}>Please enter a valid english word.</h3>
     );
