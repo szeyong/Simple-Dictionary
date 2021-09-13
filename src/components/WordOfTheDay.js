@@ -6,7 +6,7 @@ const WordOfTheDay = () => {
     const [theWord, setTheWord] = useState(null);
 
     useEffect (() => {
-        let wotdUrl = `https://api.wordnik.com/v4/words.json/wordOfTheDay?api_key=a2a73e7b926c924fad7001ca3111acd55af2ffabf50eb4ae5`
+        let wotdUrl = `https://api.wordnik.com/v4/words.json/wordOfTheDay?api_key=1wv7r4cky2gfgexufang71ve2j1t04sqkfh1qtb7l1gyq9znm`
         axios.get(wotdUrl).then(displayWotd)
     
         async function displayWotd(response) {

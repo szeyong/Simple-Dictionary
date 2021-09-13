@@ -9,27 +9,6 @@ const Parent = () => {
     const [error, setError] = useState(null);
     // const [wotd, setWotd] = useState(null);
 
-    // const handleClick = () => {
-    //     setResults(null);
-    //     fetch('https://random-word-api.herokuapp.com/word?number=1')
-    //     .then(response => {
-    //         return response.json();
-    //     })
-    //     .then(response => {
-    //         setWod(response);
-    //     })
-    //     .catch(err => {
-    //         console.log(err);
-    //         return null;
-    //     });
-    // }
-
-    // const handleClick = () => {
-    //     setResults(null);
-    //     setError(null);
-    //     let wodUrl = `https://api.wordnik.com/v4/words.json/wordOfTheDay?api_key=a2a73e7b926c924fad7001ca3111acd55af2ffabf50eb4ae5`
-    //     axios.get(wodUrl).then(displayWod)
-    // }
     const refreshWindow = () => {
         window.location.reload();
     }
