@@ -2,7 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-You may try the app [here] (https://main.d2mswn0g69a6tl.amplifyapp.com/)
+You may try the app [here](https://main.d2mswn0g69a6tl.amplifyapp.com/)
 
 This is a simple dictionary app with the **Word of The Day** on the start page - *inspired by dictionary.com*. Search the meaning of any English word and find examples of how the word is being used. 
 
