@@ -6,6 +6,8 @@ You may try the app [here](https://main.d2mswn0g69a6tl.amplifyapp.com/)
 
 This is a simple dictionary app with the **Word of The Day** on the start page - *inspired by dictionary.com*. Search the meaning of any English word and find examples of how the word is being used. 
 
+<img src="https://szeyong.github.io/Simple-Dictionary/public/dictionary_home.png">
+
 The app is build on REACT JS and using the [Free Dictionary API](https://dictionaryapi.dev/) and [Wordnik API](https://developer.wordnik.com/docs#!/words/getWordOfTheDay) (for the **Word of the Day**). My favourite part of the project is getting the **Word of the Day** via a second API. I will love to update the app with the option of a thesaurus (which I often use for my writings).
 
 
