@@ -1,22 +1,26 @@
 import React, { useState, useEffect } from 'react';
 import axios from "axios";
 import styles from "./Results.module.css";
+// require('dotenv').config()
 
 const WordOfTheDay = () => {
     const [theWord, setTheWord] = useState(null);
 
     useEffect (() => {
-        let wotdUrl = `https://api.wordnik.com/v4/words.json/wordOfTheDay?api_key=`
+        const secret = process.env.REACT_APP_WORDNIK_APIKEY;
+        // console.log(process.env);
+        // console.log("secret",secret)
+        let wotdUrl = `https://api.wordnik.com/v4/words.json/wordOfTheDay?api_key=${secret}`
         axios.get(wotdUrl).then(displayWotd)
     
         async function displayWotd(response) {
-            console.log("Response Data: ",response.data)
+            // console.log("Response Data: ",response.data)
             const wotdData = response.data;
             // const theWord = wotdData.word;
             // const wotdDefinition = wotdData.definitions[0].text;
-            console.log("wotdData:", wotdData);
-            console.log("The Word:", wotdData.word);
-            console.log("Definition:", wotdData.definitions[0].text);
+            // console.log("wotdData:", wotdData);
+            // console.log("The Word:", wotdData.word);
+            // console.log("Definition:", wotdData.definitions[0].text);
     
             await setTheWord(wotdData);
         }    
